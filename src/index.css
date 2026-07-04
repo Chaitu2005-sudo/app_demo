@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: background 0.4s ease;
+}
+
+/* Frosted Glass Mesh Backdrops */
+.mesh-bg-dark {
+  background-color: #0F172A;
+  background-image: 
+    radial-gradient(circle at 20% 20%, #1E293B 0%, #0F172A 100%),
+    radial-gradient(circle at 80% 80%, #1E1B4B 0%, transparent 50%),
+    radial-gradient(circle at 50% 10%, #064E3B 0%, transparent 40%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mesh-bg-light {
+  background-color: #F8FAFC;
+  background-image: 
+    radial-gradient(circle at 20% 20%, #f1f5f9 0%, #cbd5e1 100%),
+    radial-gradient(circle at 80% 80%, #e0e7ff 0%, transparent 50%),
+    radial-gradient(circle at 50% 10%, #d1fae5 0%, transparent 40%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Elegant scrollbar styling for glass containers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

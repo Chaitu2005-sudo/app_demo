@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: ems
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:ems_db}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+# Security JWT Configurations
+app:
+  jwtSecret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  jwtExpirationMs: 86400000 # 24 hours
+  jwtRefreshExpirationMs: 604800000 # 7 days
+
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method

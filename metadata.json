@@ -1,0 +1,6 @@
+{
+  "name": "Employee Management System",
+  "description": "An enterprise-grade Full Stack Employee Management System with Java Spring Boot, React 19, PostgreSQL, Docker, and Role-Based JWT Security.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
